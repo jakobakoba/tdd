@@ -2,7 +2,7 @@ package com.example.middleinterview.parsers;
 
 import androidx.annotation.NonNull;
 
-public class BooleanParser implements TypeParser<Boolean> {
+public class BooleanParser implements TypeParser<Object> {
 
 
     @Override

@@ -2,12 +2,19 @@ package com.example.middleinterview.definers;
 
 import androidx.annotation.NonNull;
 
-public interface ByteDefiner {
-    public boolean isByte(@NonNull String input);
+public interface ByteDefiner extends Definer {
+    boolean isByte(@NonNull String input);
 
     class Base implements ByteDefiner {
+
+        @Override
+        public boolean isType(@NonNull String input) {
+            return isByte(input);
+        }
+
         @Override
         public boolean isByte(@NonNull String input) {
+
 
             if (input.isEmpty() || input.length() > 4) {
                 return false;

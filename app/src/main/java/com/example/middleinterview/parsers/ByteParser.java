@@ -1,6 +1,6 @@
 package com.example.middleinterview.parsers;
 
-public class ByteParser implements TypeParser<Byte> {
+public class ByteParser implements TypeParser<Object> {
 
 
     @Override

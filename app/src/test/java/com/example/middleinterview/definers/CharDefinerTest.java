@@ -41,6 +41,9 @@ public class CharDefinerTest {
         incorrect.add("");
         incorrect.add("1");
         incorrect.add("12");
+        incorrect.add("0");
+        incorrect.add("9");
+
         boolean actual;
         for (int i = 0; i < incorrect.size(); i++) {
             actual = charDefiner.isChar(incorrect.get(i));
